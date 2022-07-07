@@ -54,7 +54,7 @@ export default function TextForm(props) {
         <div >
                 <h2 className={`my-3 text-${props.textFormTheme.textColor}`}>{props.heading}</h2>
                 <div style={{textAlign: 'center'}}>
-                    <textarea  className={`my-2 text-${props.textFormTheme.textColor}`} style={{backgroundColor: props.textFormTheme.backgroundColor,}} value={text} id="myBox" rows="8" cols="50" onChange={onChangeHandler}></textarea> <br />
+                    <textarea  className={`my-2 text-${props.textFormTheme.textColor}`} style={{backgroundColor: props.textFormTheme.backgroundColor,}} value={text} id="myBox" rows="8" cols="20" onChange={onChangeHandler}></textarea> <br />
                     <button className={`btn btn-${props.textFormTheme.btnTheme} my-3 mx-1`} onClick={onUpperClick}>Upper Case</button>
                     <button className={`btn btn-${props.textFormTheme.btnTheme} my-3 mx-1`} onClick={onLowerClick}>Lower Case</button>
                     <button className={`btn btn-${props.textFormTheme.btnTheme} my-3 mx-1`} onClick={onCamalCase}>Camal Case</button>
